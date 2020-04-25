@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, .main_section {
+	font-family: Roboto, "Century Gothic", "sans-serif";
+	height: 100%;
+	width: auto;
+	background-image: url("background_cropped.jpg");
+	background-repeat: repeat-y;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.parent {
+	display: flex;
+}
+
+.schedule {
+	flex: 1;
+}
+
+.dua {
+	flex: 1;
+	margin-bottom: 60px;
+	background-image: url("ramadan.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 500px 1390px;
+	position: relative;
+}
+
+.duas {
+	height: 50%;
+	width: 70%;
+	margin-top: 450px;
+	margin-left: 95px;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+#rahmat, #magfiraat, #nazaat {
+	text-align: center;
+}
+
+table {
+	margin-left: 20px;
+}
+
+table tr th {
+	border: 1px solid #000000;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 15px 35px;
+	font-weight: bolder;
+}
+
+table tr td {
+	border: 1px solid #000000;
+	border-collapse: collapse;
+	text-align: center;
+	height: 50px;
+	width: 40px;
+	font-weight: bold;
+}
