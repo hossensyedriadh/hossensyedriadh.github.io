@@ -21,11 +21,11 @@ const dates = ['Apr 25, 2020 18:28:00', 'Apr 26, 2020 18:29:00', 'Apr 27, 2020 1
 						blink();
 					}
 					
-					/*if (hours <= 3) {
+					if (hours <= 3) {
 						t.style.display = "block";
 					} else {
 						t.style.display = "none";
-					}*/
+					}
 					
 					if (distance <= 0) {
 						clearInterval(counter);
