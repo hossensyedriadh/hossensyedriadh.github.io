@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="ramadanul kareem.png">
 <link rel="stylesheet" type="text/css" href="ramadan_styles.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 	  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -11,22 +12,46 @@
 
 <body>
 	<section class="main_section">
-		<img style="display: block; margin-left: auto; margin-right: auto;" src="ramadanul kareem.png" alt="ramadanul_kareem" height="130" width="450">
+		<div class="chandelier">
+			<div id="chandelier1_holder">
+				<img src="chandelier.png" alt="chandelier">
+			</div>
+			<div id="chandelier2_holder">
+				<img src="chandelier.png" alt="chandelier">
+			</div>
+		</div>
+		<br>
+		<img id="ramadan_kareem" src="ramadanul kareem.png" alt="ramadanul_kareem">
 		<br>
 		<h5 style="text-align: center;"><strong>Ramadan ul Kareem</strong></h5>
 		<br>
+		<div class="timer" id="timer_div">
+			<h5><strong>Time left till iftaar</strong></h5>
+			<div id="hour">
+				<h3 id="hours"></h3>
+			</div>
+			<div style="display: inline-block;"><h4 id="blink1">:</h4></div>
+			<div id="minute">
+				<h3 id="minutes"></h3>
+			</div>
+			<div style="display: inline-block;"><h4 id="blink2">:</h4></div>
+			<div id="second">
+				<h3 id="seconds"></h3>
+			</div>
+		</div>
 		<br>
 		<div class="parent">
 			<div class="schedule">
-				<h6 style="text-align: center;"><strong>Hijri 1441, English 2020</strong></h6>
-				<h5 style="text-align: center;"><strong>Schedule for Suhoor and Iftaar</strong></h5>
-				<h6 style="text-align: center;"><strong>For Dhaka and near by districts</strong></h6>
+				<h5 id="year"><strong>Hijri 1441, Gregorian 2020</strong></h5>
+				<h4 id="title"><strong>Schedule for Suhoor and Iftaar</strong></h4>
+				<h6 id="timezone"><strong>Timezone: GMT +6:00</strong></h6>
+				<h5 id="districts"><strong>For Dhaka and near by districts</strong></h5>
 				<br>
 				<table>
-					<tr style="color: #454980; font-size: 1.3rem;">
+					<tr id="rahmat_caption">
 						<th colspan="6">Rahmat: 10 Days</th>
 					</tr>
-					<tr>
+					<tr style="color: #621529;">
 						<th>Ramadan</th>
 						<th>Date</th>
 						<th>Day</th>
@@ -114,8 +139,16 @@
 						<td>4.01 AM</td>
 						<td>6.32 PM</td>
 					</tr>
-					<tr style="color: #343980; font-size: 1.3rem;">
+					<tr id="magfiraat_caption">
 						<th colspan="6">Magfiraat: 10 Days</th>
+					</tr>
+					<tr style="color: #621529;">
+						<th>Ramadan</th>
+						<th>Date</th>
+						<th>Day</th>
+						<th>Suhoor</th>
+						<th>Fajr</th>
+						<th>Iftaar</th>
 					</tr>
 					<tr>
 						<td>11</td>
@@ -197,8 +230,16 @@
 						<td>3.54 AM</td>
 						<td>6.37 PM</td>
 					</tr>
-					<tr style="color: #242a80; font-size: 1.3rem;">
+					<tr id="nazaat_caption">
 						<th colspan="6">Nazaat: 10 Days</th>
+					</tr>
+					<tr style="color: #621529;">
+						<th>Ramadan</th>
+						<th>Date</th>
+						<th>Day</th>
+						<th>Suhoor</th>
+						<th>Fajr</th>
+						<th>Iftaar</th>
 					</tr>
 					<tr>
 						<td>21</td>
@@ -282,35 +323,36 @@
 					</tr>
 				</table>
 				<br>
+				<p id="notice"><em><strong>*Depends on the sight of moon</strong></em></p>
 			</div>
 			<br>
 			<div class="dua">
 				<div class="duas">
-					<h5 style="text-align: center;"><strong>Al-Quran</strong></h5>
+					<h5 id="ayat_1_title"><strong>Al-Quran</strong></h5>
 					<br>
-					<h4 style="text-align: right; font-size: 2rem;">شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ هُدًى لِّلنَّاسِ وَبَيِّنَاتٍ مِّنَ الْهُدَىٰ وَالْفُرْقَانِ ۚ فَمَن شَهِدَ مِنكُمُ الشَّهْرَ فَلْيَصُمْهُ ۖ وَمَن كَانَ مَرِيضًا أَوْ عَلَىٰ سَفَرٍ فَعِدَّةٌ مِّنْ أَيَّامٍ أُخَرَ ۗ يُرِيدُ اللَّهُ بِكُمُ الْيُسْرَ وَلَا يُرِيدُ بِكُمُ الْعُسْرَ وَلِتُكْمِلُوا الْعِدَّةَ وَلِتُكَبِّرُوا اللَّهَ عَلَىٰ مَا هَدَاكُمْ وَلَعَلَّكُمْ تَشْكُرُونَ</h4>
-					<p style="text-align: center;">The month of Ramadan [is that] in which was revealed the Qur'an, a guidance for the people and clear proofs of guidance and criterion. So whoever sights [the new moon of] the month, let him fast it; and whoever is ill or on a journey - then an equal number of other days. Allah intends for you ease and does not intend for you hardship and [wants] for you to complete the period and to glorify Allah for that [to] which He has guided you; and perhaps you will be grateful.</p>
-					<h6 style="text-align: right; margin-right: 20px; font-weight: bold;"><em>- (Al-Baqarah: 185)</em></h6>
+					<h4 id="arabic_ayat_1">شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ هُدًى لِّلنَّاسِ وَبَيِّنَاتٍ مِّنَ الْهُدَىٰ وَالْفُرْقَانِ ۚ فَمَن شَهِدَ مِنكُمُ الشَّهْرَ فَلْيَصُمْهُ ۖ وَمَن كَانَ مَرِيضًا أَوْ عَلَىٰ سَفَرٍ فَعِدَّةٌ مِّنْ أَيَّامٍ أُخَرَ ۗ يُرِيدُ اللَّهُ بِكُمُ الْيُسْرَ وَلَا يُرِيدُ بِكُمُ الْعُسْرَ وَلِتُكْمِلُوا الْعِدَّةَ وَلِتُكَبِّرُوا اللَّهَ عَلَىٰ مَا هَدَاكُمْ وَلَعَلَّكُمْ تَشْكُرُونَ</h4>
+					<p id="eng_ayat_1">The month of Ramadan [is that] in which was revealed the Qur'an, a guidance for the people and clear proofs of guidance and criterion. So whoever sights [the new moon of] the month, let him fast it; and whoever is ill or on a journey - then an equal number of other days. Allah intends for you ease and does not intend for you hardship and [wants] for you to complete the period and to glorify Allah for that [to] which He has guided you; and perhaps you will be grateful.</p>
+					<h6 id="source_ayat_1"><em>- (Al-Baqarah: 185)</em></h6>
 					<hr>
 					<br>
-					<h5 style="text-align: center;"><strong>Niyat (Intention) for sawm</strong></h5>
+					<h5 id="dua_1_title"><strong>Niyat (Intention) for sawm</strong></h5>
 					<br>
-					<h4 style="text-align: right; font-size: 2rem;">نـَوَيْتُ صَوْمَ غـَدٍ عَـنْ ا َدَاءِ فـَرْضِ شـَهْرِ رَمـَضَانَ هـَذِهِ السَّـنـَةِ لِلـّهِ تـَعَالىَ</h4>
-					<p style="text-align: center;">I intend to do obligatory fast tomorrow in the month of Ramadan this year because of Allah</p>
+					<h4 id="arabic_dua_1">نَوَيْتُ اَنْ اُصُوْمَ غَدًا مِّنْ شَهْرِ رَمْضَانَ الْمُبَارَكِ فَرْضَا لَكَ يَا اللهُ فَتَقَبَّل مِنِّى اِنَّكَ اَنْتَ السَّمِيْعُ الْعَلِيْم</h4>
+					<p id="eng_dua_1">Nawaituan asumma gadam-min shahri ramadanal mubaraki fardallaka ya Allahu fataqabbal minni innaka antas-samiul 'aleem</p>
 					<hr>
 					<br>
-					<h5 style="text-align: center;"><strong>Niyat (Intention) for iftaar</strong></h5>
+					<h5 id="dua_2_title"><strong>Niyat (Intention) for iftaar</strong></h5>
 					<br>
-					<h4 style="text-align: right; font-size: 2rem;">اللَّهُمَّ اِنِّى لَكَ صُمْتُ وَبِكَ امنْتُ وَعَليْكَ تَوَكّلتُ وَ عَلى رِزْقِكَ اَفْطَرْتُ</h4>
-					<p style="text-align: center;">O Allah! I fasted for You and I believe in You and I put my trust in You and I break my fast with Your sustenance</p>
+					<h4 id="arabic_dua_2">اللَّهُمَّ لَكَ صُمْتُ وَعَلَى رِزْقِكَ اَفْطَرْتُ</h4>
+					<p id="eng_dua_2">Allahumma laka sumtu wa 'ala rizqika aftartu</p>
 				</div>
 			</div>
 		</div>
-		<p style="margin-left: 30px;">*Depends on the sight of moon</p>
 		<br>
-		<footer class="modal-footer" style="background-color: #621529; color: #ffffff;">
+		<footer id="footer" class="modal-footer">
 			<p>Developed by: Syed Riadh Hossen</p>
 		</footer>
+		<script src="countdown.js"></script>
 	</section>
 </body>
 </html>
