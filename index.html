@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="ramadanul kareem.png">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<title>Ramadan Schedule</title>
+</head>
+
+<body class="bg">
+	<section class="main_section">
+		<div class="top_class">
+			<div id="chandelier1_holder">
+				<img src="chandelier.png" alt="chandelier">
+			</div>
+			<div class="title">
+				<div id="ramadan_kareem">
+					<img src="ramadanul kareem.png" alt="ramadanul_kareem">
+				</div>
+				<br>
+				<div id="eng_text">
+					<h5 style="text-align: center;"><strong>Ramadan ul Kareem</strong></h5>
+				</div>
+			</div>
+			<div id="chandelier2_holder">
+				<img src="chandelier.png" alt="chandelier">
+			</div>
+		</div>
+		<br>
+		<div class="timer" id="timer_div">
+			<div id="head">
+				<h5><strong id="label"></strong></h5>
+				<br>
+			</div>
+			<div id="timer_body">
+				<div id="hour">
+					<p id="hours"></p>
+				</div>
+				<div id="first_colon" style="display: inline-block;">
+					<h4 id="blink1">:</h4>
+				</div>
+				<div id="minute">
+					<p id="minutes"></p>
+				</div>
+				<div id="second_colon" style="display: inline-block;">
+					<h4 id="blink2">:</h4>
+				</div>
+				<div id="second">
+					<p id="seconds"></p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="parent">
+			<div class="schedule">
+				<h6 id="year"><strong>Hijri 1441, Gregorian 2020</strong></h6>
+				<h5 id="title"><strong>Schedule for Suhoor and Iftaar</strong></h5>
+				<h6 id="timezone"><strong>Timezone: GMT +6:00</strong></h6>
+				<h6 id="districts"><strong>For Dhaka and near by districts</strong></h6>
+				<br>
+				<table id="schedule_table">
+					<tr id="rahmat_caption">
+						<th colspan="6">Rahmat: 10 Days</th>
+					</tr>
+					<tr style="color: #621529;">
+						<th>Ramadan</th>
+						<th>Date</th>
+						<th>Day</th>
+						<th>Suhoor</th>
+						<th>Fajr</th>
+						<th>Iftaar</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>25 April</td>
+						<td>Saturday</td>
+						<td>4.05 AM</td>
+						<td>4.11 AM</td>
+						<td>6.28 PM</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>26 April</td>
+						<td>Sunday</td>
+						<td>4.04 AM</td>
+						<td>4.10 AM</td>
+						<td>6.29 PM</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>27 April</td>
+						<td>Monday</td>
+						<td>4.03 AM</td>
+						<td>4.09 AM</td>
+						<td>6.29 PM</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>28 April</td>
+						<td>Tuesday</td>
+						<td>4.02 AM</td>
+						<td>4.08 AM</td>
+						<td>6.29 PM</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>29 April</td>
+						<td>Wednesday</td>
+						<td>4.01 AM</td>
+						<td>4.07 AM</td>
+						<td>6.30 PM</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>30 April</td>
+						<td>Thursday</td>
+						<td>4.00 AM</td>
+						<td>4.06 AM</td>
+						<td>6.30 PM</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>1 May</td>
+						<td>Friday</td>
+						<td>3.59 AM</td>
+						<td>4.05 AM</td>
+						<td>6.31 PM</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>2 May</td>
+						<td>Saturday</td>
+						<td>3.58 AM</td>
+						<td>4.04 AM</td>
+						<td>6.31 PM</td>
+						</tr>
+					<tr>
+						<td>9</td>
+						<td>3 May</td>
+						<td>Sunday</td>
+						<td>3.57 AM</td>
+						<td>4.03 AM</td>
+						<td>6.32 PM</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>4 May</td>
+						<td>Monday</td>
+						<td>3.55 AM</td>
+						<td>4.01 AM</td>
+						<td>6.32 PM</td>
+					</tr>
+					<tr id="magfiraat_caption">
+						<th colspan="6">Magfiraat: 10 Days</th>
+					</tr>
+					<tr style="color: #621529;">
+						<th>Ramadan</th>
+						<th>Date</th>
+						<th>Day</th>
+						<th>Suhoor</th>
+						<th>Fajr</th>
+						<th>Iftaar</th>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>5 May</td>
+						<td>Tuesday</td>
+						<td>3.54 AM</td>
+						<td>4.00 AM</td>
+						<td>6.33 PM</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>6 May</td>
+						<td>Wednesday</td>
+						<td>3.53 AM</td>
+						<td>3.59 AM</td>
+						<td>6.33 PM</td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td>7 May</td>
+						<td>Thursday</td>
+						<td>3.52 AM</td>
+						<td>3.58 AM</td>
+						<td>6.34 PM</td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td>8 May</td>
+						<td>Friday</td>
+						<td>3.51 AM</td>
+						<td>3.57 AM</td>
+						<td>6.34 PM</td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>9 May</td>
+						<td>Saturday</td>
+						<td>3.50 AM</td>
+						<td>3.56 AM</td>
+						<td>6.35 PM</td>
+					</tr>
+					<tr>
+						<td>16</td>
+						<td>10 May</td>
+						<td>Sunday</td>
+						<td>3.50 AM</td>
+						<td>3.56 AM</td>
+						<td>6.35 PM</td>
+					</tr>
+					<tr>
+						<td>17</td>
+						<td>11 May</td>
+						<td>Monday</td>
+						<td>3.49 AM</td>
+						<td>3.55 AM</td>
+						<td>6.36 PM</td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>12 May</td>
+						<td>Tuesday</td>
+						<td>3.49 AM</td>
+						<td>3.55 AM</td>
+						<td>6.36 PM</td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>13 May</td>
+						<td>Wednesday</td>
+						<td>3.48 AM</td>
+						<td>3.54 AM</td>
+						<td>6.36 PM</td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>14 May</td>
+						<td>Thursday</td>
+						<td>3.48 AM</td>
+						<td>3.54 AM</td>
+						<td>6.37 PM</td>
+					</tr>
+					<tr id="nazaat_caption">
+						<th colspan="6">Nazaat: 10 Days</th>
+					</tr>
+					<tr style="color: #621529;">
+						<th>Ramadan</th>
+						<th>Date</th>
+						<th>Day</th>
+						<th>Suhoor</th>
+						<th>Fajr</th>
+						<th>Iftaar</th>
+					</tr>
+					<tr>
+						<td>21</td>
+						<td>15 May</td>
+						<td>Friday</td>
+						<td>3.47 AM</td>
+						<td>3.53 AM</td>
+						<td>6.37 PM</td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>16 May</td>
+						<td>Saturday</td>
+						<td>3.47 AM</td>
+						<td>3.53 AM</td>
+						<td>6.38 PM</td>
+					</tr>
+					<tr>
+						<td>23</td>
+						<td>17 May</td>
+						<td>Sunday</td>
+						<td>3.46 AM</td>
+						<td>3.52 AM</td>
+						<td>6.38 PM</td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>18 May</td>
+						<td>Monday</td>
+						<td>3.46 AM</td>
+						<td>3.52 AM</td>
+						<td>6.39 PM</td>
+					</tr>
+					<tr>
+						<td>25</td>
+						<td>19 May</td>
+						<td>Tuesday</td>
+						<td>3.45 AM</td>
+						<td>3.51 AM</td>
+						<td>6.39 PM</td>
+					</tr>
+					<tr>
+						<td>26</td>
+						<td>20 May</td>
+						<td>Wednesday</td>
+						<td>3.44 AM</td>
+						<td>3.50 AM</td>
+						<td>6.40 PM</td>
+					</tr>
+					<tr>
+						<td>27</td>
+						<td>21 May</td>
+						<td>Thursday</td>
+						<td>3.44 AM</td>
+						<td>3.50 AM</td>
+						<td>6.40 PM</td>
+					</tr>
+					<tr>
+						<td>28</td>
+						<td>22 May</td>
+						<td>Friday</td>
+						<td>3.43 AM</td>
+						<td>3.49 AM</td>
+						<td>6.41 PM</td>
+					</tr>
+					<tr>
+						<td>29</td>
+						<td>23 May</td>
+						<td>Saturday</td>
+						<td>3.43 AM</td>
+						<td>3.49 AM</td>
+						<td>6.42 PM</td>
+					</tr>
+					<tr>
+						<td>*30</td>
+						<td>24 May</td>
+						<td>Sunday</td>
+						<td>3.42 AM</td>
+						<td>3.48 AM</td>
+						<td>6.42 PM</td>
+					</tr>
+				</table>
+				<br>
+				<p id="notice"><em><strong>*Depends on the sight of moon</strong></em></p>
+			</div>
+			<br>
+			<div class="dua">
+				<div class="duas">
+					<h5 id="ayat_1_title"><strong>Al-Quran</strong></h5>
+					<br>
+					<h4 id="arabic_ayat_1">شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ هُدًى لِّلنَّاسِ وَبَيِّنَاتٍ مِّنَ الْهُدَىٰ وَالْفُرْقَانِ ۚ فَمَن شَهِدَ مِنكُمُ الشَّهْرَ فَلْيَصُمْهُ ۖ وَمَن كَانَ مَرِيضًا أَوْ عَلَىٰ سَفَرٍ فَعِدَّةٌ مِّنْ أَيَّامٍ أُخَرَ ۗ يُرِيدُ اللَّهُ بِكُمُ الْيُسْرَ وَلَا يُرِيدُ بِكُمُ الْعُسْرَ وَلِتُكْمِلُوا الْعِدَّةَ وَلِتُكَبِّرُوا اللَّهَ عَلَىٰ مَا هَدَاكُمْ وَلَعَلَّكُمْ تَشْكُرُونَ</h4>
+					<p id="eng_ayat_1">The month of Ramadan [is that] in which was revealed the Qur'an, a guidance for the people and clear proofs of guidance and criterion. So whoever sights [the new moon of] the month, let him fast it; and whoever is ill or on a journey - then an equal number of other days. Allah intends for you ease and does not intend for you hardship and [wants] for you to complete the period and to glorify Allah for that [to] which He has guided you; and perhaps you will be grateful.</p>
+					<h6 id="source_ayat_1"><em>- (Al-Baqarah: 185)</em></h6>
+					<hr>
+					<br>
+					<h5 id="dua_1_title"><strong>Niyat (Intention) for sawm</strong></h5>
+					<br>
+					<h4 id="arabic_dua_1">نَوَيْتُ اَنْ اُصُوْمَ غَدًا مِّنْ شَهْرِ رَمْضَانَ الْمُبَارَكِ فَرْضَا لَكَ يَا اللهُ فَتَقَبَّل مِنِّى اِنَّكَ اَنْتَ السَّمِيْعُ الْعَلِيْم</h4>
+					<p id="eng_dua_1">Nawaituan asumma gadam-min shahri ramadanal mubaraki fardallaka ya Allahu fataqabbal minni innaka antas-samiul 'aleem</p>
+					<hr>
+					<br>
+					<h5 id="dua_2_title"><strong>Niyat (Intention) for iftaar</strong></h5>
+					<br>
+					<h4 id="arabic_dua_2">اللَّهُمَّ لَكَ صُمْتُ وَعَلَى رِزْقِكَ اَفْطَرْتُ</h4>
+					<p id="eng_dua_2">Allahumma laka sumtu wa 'ala rizqika aftartu</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<footer id="footer" class="modal-footer">
+			<div id="dev_label">
+				<p>Developed by: Syed Riadh Hossen</p>
+			</div>
+			<br>
+			<div class="socials">
+				<a href="https://www.facebook.com/riadhhossen.rh/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+				<a href="https://www.instagram.com/riadh_hossen/" target="_blank"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.github.com/hossensyedriadh/" target="_blank"><i class="fa fa-github"></i></a>
+				<a href="mailto:hossensyedriadh@gmail.com"><i class="fa fa-envelope-o"></i></a>
+			</div>
+		</footer>
+		<script src="countdown.js"></script>
+	</section>
+</body>
+</html>

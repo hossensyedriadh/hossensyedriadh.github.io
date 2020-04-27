@@ -1,0 +1,582 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: Roboto, "Century Gothic", "sans-serif";
+	height: auto;
+	width: auto;
+}
+
+.bg {
+	background-image: url("background_cropped.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+}
+
+.main_section {
+	display: block;
+}
+
+.top_class {
+	flex-grow: 2;
+	flex-shrink: 2;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-flow: flex-wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#chandelier1_holder {
+	order: 1;
+	flex-basis: auto;
+	position: relative;
+	z-index: 1;
+	/*margin-left: 140px;*/
+}
+
+#chandelier1_holder img {
+	height: 250px;
+}
+
+.title {
+	order: 2;
+	flex-basis: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#ramadan_kareem {
+	order: 1;
+	flex-basis: auto;
+	display: flex;
+	justify-content: center;
+}
+
+#ramadan_kareem img {
+	height: 130px;
+	width: 450px;
+	order: 1;
+	flex-basis: auto;
+}
+
+#eng_text {
+	order: 2;
+	flex-basis: auto;
+}
+
+#chandelier2_holder {
+	order: 3;
+	flex-basis: auto;
+	position: relative;
+	z-index: 1;
+	/*margin-right: 140px;*/
+}
+
+#chandelier2_holder img {
+	height: 250px;
+}
+
+.timer {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-flow: flex-wrap;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#head {
+	order: 1;
+	flex-basis: auto;
+	text-align: center;
+}
+
+#timer_body {
+	order: 2;
+	flex-basis: auto;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-flow: flex-wrap;
+	justify-content: center;
+	flex-direction: row;
+}
+
+#hour {
+	order: 1;
+	flex-basis: auto;
+	background-color: #621529;
+	color: #ffffff;
+	padding: 12px 0px 8px 0px;
+	height: 65px;
+	width: 80px;
+	border-radius: 10px;
+	box-shadow: 5px 4px 4px #888888;
+	text-align: center;
+	font-size: 1.7rem;
+	font-weight: bold;
+}
+
+#first_colon {
+	order: 2;
+	flex-basis: auto;
+	margin: 18px 5px 0px 5px;
+}
+
+#minute {
+	order: 3;
+	flex-basis: auto;
+	background-color: #621529;
+	color: #ffffff;
+	padding: 12px 0px 8px 0px;
+	height: 65px;
+	width: 80px;
+	border-radius: 10px;
+	box-shadow: 5px 4px 4px #888888;
+	text-align: center;
+	font-size: 1.7rem;
+	font-weight: bold;
+}
+
+#second_colon {
+	order: 4;
+	flex-basis: auto;
+	margin: 18px 5px 0px 5px;
+}
+
+#second {
+	order: 5;
+	flex-basis: auto;
+	background-color: #621529;
+	color: #ffffff;
+	padding: 12px 0px 8px 0px;
+	height: 65px;
+	width: 80px;
+	border-radius: 10px;
+	box-shadow: 5px 4px 4px #888888;
+	text-align: center;
+	font-size: 1.7rem;
+	font-weight: bold;
+}
+/*Top*/
+
+
+/*Mid*/
+.parent {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-flow: flex-wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/*Schedule*/
+.schedule {
+	order: 1;
+	flex-basis: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 20px;
+}
+
+#year {
+	order: 1;
+	flex-basis: auto;
+	text-align: center;
+}
+
+#title {
+	order: 2;
+	flex-basis: auto;
+	text-align: center;
+}
+
+#timezone {
+	order: 3;
+	flex-basis: auto;
+	text-align: center;
+}
+
+#districts {
+	order: 4;
+	flex-basis: auto;
+	text-align: center;
+}
+
+#rahmat_caption {
+	font-weight: 500;
+	font-size: 1.25rem;
+	color: #2e406e;
+}
+
+#magfiraat_caption {
+	font-weight: 500;
+	font-size: 1.25rem;
+	color: #182e66;
+}
+
+#nazaat_caption {
+	font-weight: 500;
+	font-size: 1.25rem;
+	color: #08205c;
+}
+
+#schedule_table {
+	order: 5;
+	flex-basis: auto;
+	text-align: center;
+}
+
+#schedule_table tr th {
+	border: 1px solid #000000;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 15px 35px;
+	font-weight: bolder;
+}
+
+#schedule_table tr td {
+	border: 1px solid #000000;
+	border-collapse: collapse;
+	text-align: center;
+	height: 50px;
+	width: 40px;
+	font-weight: bold;
+}
+
+#notice {
+	order: 6;
+	flex-basis: auto;
+	text-align: left;
+	margin-left: 15px;
+}
+/*Schedule*/
+
+/*Dua*/
+
+.dua {
+	order: 2;
+	flex-basis: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url("ramadan crescent.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 450px 1360px;
+}
+
+.duas {
+	order: 1;
+	text-align: center;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-basis: auto;
+	font-size: 1.1rem;
+}
+
+#ayat_1_title {
+	order: 1;
+	flex-basis: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+
+#arabic_ayat_1 {
+	order: 2;
+	flex-basis: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 67%;
+}
+
+#eng_ayat_1 {
+	order: 3;
+	flex-basis: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	width: 67%;
+}
+
+#source_ayat_1 {
+	order: 4;
+	flex-basis: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+
+#dua_1_title {
+	order: 5;
+	flex-basis: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+
+#arabic_dua_1 {
+	order: 6;
+	flex-basis: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 67%;
+}
+
+#eng_dua_1 {
+	order: 7;
+	flex-basis: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	width: 67%;
+}
+
+#dua_2_title {
+	order: 8;
+	flex-basis: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+
+#arabic_dua_2 {
+	order: 9;
+	flex-basis: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 67%;
+}
+
+#eng_dua_2 {
+	order: 10;
+	flex-basis: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 67%;
+}
+/*Dua*/
+
+/*Bottom*/
+#footer {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	margin-top: 30px;
+	background-color: #787878;
+	color: #000000;
+	position: relative;
+	width: 100%;
+}
+
+#dev_label {
+	order: 1;
+	flex-basis: auto;
+	display: block;
+}
+
+.socials {
+	order: 2;
+	flex-basis: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.socials a {
+	font-size: 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	display: inline-block;
+}
+
+.socials i {
+	transition: transform .4s;
+	margin-left: 10px;
+}
+
+.socials i:hover {
+	transform: scale(1.5) rotate(360deg);
+	color: #801d37;
+}
+
+@media (max-width: 1350px) {
+	#chandelier1_holder {
+		margin-left: 2vw;
+	}
+	
+	#chandelier2_holder {
+		margin-right: 2vw;
+	}
+	
+	#chandelier1_holder img, #chandelier2_holder img {
+		height: 180px;
+	}
+	
+	#ramadan_kareem img {
+		height: 70px;
+		width: 270px;
+	}
+	
+	#hour {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	#first_colon {
+		order: 2;
+		flex-basis: auto;
+		margin: 10px 5px 0px 5px;
+	}
+	
+	#minute {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	#second_colon {
+		order: 4;
+		flex-basis: auto;
+		margin: 10px 5px 0px 5px;
+	}
+	
+	#second {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	.parent {
+		flex-direction: column;
+	}
+	
+	.schedule {
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: space-between;
+		
+	}
+	
+	#year {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#title {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#timezone {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#districts {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#schedule_table {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#schedule_table tr th {
+		border: 1px solid #000000;
+		border-collapse: collapse;
+		text-align: center;
+		padding: 3vh 2.4vw;
+		font-weight: bolder;
+	}
+
+	#schedule_table tr td {
+		border: 1px solid #000000;
+		border-collapse: collapse;
+		text-align: center;
+		height: 7vh;
+		font-weight: bold;
+	}
+
+	#notice {
+		margin-left: 15px;
+	}
+	
+	.duas {
+		background-position: bottom;
+		width: 440px;
+		height: 1350px;
+		margin-top: 80px;
+		padding-top: 40px;
+		padding-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.duas {
+		font-size: .9rem;
+	}
+	
+	#arabic_ayat_1 {
+		width: 95%;
+	}
+
+	#eng_ayat_1 {
+		width: 95%;
+	}
+
+	#arabic_dua_1 {
+		width: 95%;
+	}
+
+	#eng_dua_1 {
+		width: 95%;
+	}
+
+	#arabic_dua_2 {
+		width: 95%;
+	}
+
+	#eng_dua_2 {
+		width: 95%;
+	}
+}
