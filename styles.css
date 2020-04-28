@@ -251,7 +251,7 @@ html, body {
 	flex-basis: auto;
 	text-align: left;
 	margin-left: 15px;
-	color: #6b0000;
+	color: #665200;
 }
 /*Schedule*/
 
@@ -425,6 +425,9 @@ html, body {
 }
 
 @media (max-width: 1350px) {
+	.top_class {
+		justify-content: space-between;
+	}
 	
 	#chandelier1_holder {
 		margin-left: 2vw;
@@ -439,8 +442,8 @@ html, body {
 	}
 	
 	#ramadan_kareem img {
-		height: 70px;
-		width: 270px;
+		height: 65px;
+		width: 250px;
 	}
 	
 	#hour {
@@ -486,49 +489,46 @@ html, body {
 	.schedule {
 		margin-left: auto;
 		margin-right: auto;
-		justify-content: space-between;
+		justify-content: space-around;
+		padding: 0px 5px;
 	}
 	
 	#year {
-		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
 	
 	#title {
-		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	#timezone {
-		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	#districts {
-		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	#schedule_table {
-		display: block;
 		margin-left: auto;
 		margin-right: auto;
+		padding: 0px 5px;
 	}
 	
 	#schedule_table tr th {
-		border: 1px solid #000000;
+		border: 2px solid #000000;
 		border-collapse: collapse;
 		text-align: center;
-		padding: 3vh 2.4vw;
+		padding: 3vh 2.0vw;
 		font-weight: bolder;
 	}
 
 	#schedule_table tr td {
-		border: 1px solid #000000;
+		border: 2px solid #000000;
 		border-collapse: collapse;
 		text-align: center;
 		height: 7vh;
