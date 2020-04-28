@@ -1,10 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-* {
-	box-sizing: border-box;
-}
-
 html, body {
 	font-family: Roboto, "Century Gothic", "sans-serif";
 	height: auto;
@@ -26,8 +22,6 @@ html, body {
 }
 
 .top_class {
-	flex-grow: 2;
-	flex-shrink: 2;
 	display: flex;
 	flex-wrap: nowrap;
 	flex-flow: flex-wrap;
@@ -172,7 +166,7 @@ html, body {
 	flex-wrap: nowrap;
 	flex-flow: flex-wrap;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 /*Schedule*/
@@ -180,6 +174,8 @@ html, body {
 	order: 1;
 	flex-basis: auto;
 	display: flex;
+	flex-wrap: nowrap;
+	flex-flow: flex-wrap;
 	flex-direction: column;
 	justify-content: space-around;
 	margin-left: 20px;
@@ -264,12 +260,14 @@ html, body {
 	order: 2;
 	flex-basis: auto;
 	display: flex;
+	flex-wrap: nowrap;
+	flex-flow: flex-wrap;
 	justify-content: center;
-	flex-direction: column;
+	flex-direction: row;
 	background-image: url("ramadan crescent.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 450px 1360px;
+	background-size: 32.94vw 207vh;
 }
 
 .duas {
@@ -426,6 +424,7 @@ html, body {
 }
 
 @media (max-width: 1350px) {
+	
 	#chandelier1_holder {
 		margin-left: 2vw;
 	}
@@ -540,14 +539,15 @@ html, body {
 	}
 	
 	.dua {
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 5px;
+		background-size: 94vw 202vh;
 	}
 	
 	.duas {
-		background-position: bottom;
-		width: 440px;
-		height: 1350px;
+		width: 90vw;
+		height: 198vh;
 		margin-top: 80px;
 		padding-top: 40px;
 		padding-bottom: 30px;
