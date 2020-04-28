@@ -424,8 +424,16 @@ html, body {
 }
 
 @media (max-width: 1350px) {
+	.bg {
+		background-image: url("background_cropped.jpg");
+		background-repeat: repeat-y;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+	}
+	
 	.top_class {
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 	
 	#chandelier1_holder {
@@ -515,14 +523,14 @@ html, body {
 	#schedule_table {
 		margin-left: auto;
 		margin-right: auto;
-		padding: 0px 5px;
+		padding: 2px 3px;
 	}
 	
 	#schedule_table tr th {
 		border: 2px solid #000000;
 		border-collapse: collapse;
 		text-align: center;
-		padding: 3vh 2.0vw;
+		padding: 10px 1.5vw;
 		font-weight: bolder;
 	}
 
@@ -530,7 +538,8 @@ html, body {
 		border: 2px solid #000000;
 		border-collapse: collapse;
 		text-align: center;
-		height: 7vh;
+		padding: 2px 1.5vw;
+		height: 5px;
 		font-weight: bold;
 	}
 
@@ -542,12 +551,12 @@ html, body {
 		margin-left: 0px;
 		margin-right: 0px;
 		padding: 5px;
-		background-size: 425px 1325px;
+		background-size: 415px 1315px;
 	}
 	
 	.duas {
-		width: 415px;
-		height: 1315px;
+		width: 405px;
+		height: 1305px;
 		margin-top: 70px;
 		padding-bottom: 30px;
 		margin-left: auto;
