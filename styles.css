@@ -271,6 +271,7 @@ html, body {
 }
 
 .duas {
+	width: 640px;
 	order: 1;
 	text-align: center;
 	font-weight: bold;
