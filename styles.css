@@ -251,7 +251,7 @@ html, body {
 	flex-basis: auto;
 	text-align: left;
 	margin-left: 15px;
-	color: #665200;
+	color: #6b0000;
 }
 /*Schedule*/
 
@@ -262,13 +262,12 @@ html, body {
 	flex-basis: auto;
 	display: flex;
 	flex-wrap: nowrap;
-	flex-flow: flex-wrap;
 	justify-content: center;
-	flex-direction: row;
+	flex-direction: column;
 	background-image: url("ramadan crescent.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 32.94vw 207vh;
+	background-size: 460px 1360px;
 }
 
 .duas {
@@ -276,9 +275,10 @@ html, body {
 	text-align: center;
 	font-weight: bold;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	flex-direction: column;
 	flex-basis: auto;
+	margin-top: 100px;
 	font-size: 1.1rem;
 }
 
@@ -375,7 +375,6 @@ html, body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 20px;
 	width: 67%;
 }
 /*Dua*/
@@ -389,7 +388,7 @@ html, body {
 	background-color: #787878;
 	color: #000000;
 	position: relative;
-	width: 100%;
+	width: auto;
 }
 
 #dev_label {
@@ -425,16 +424,24 @@ html, body {
 }
 
 @media (max-width: 1350px) {
+	.main_section {
+		display: contents;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		height: 100%;
+	}
+	
 	.top_class {
 		justify-content: space-between;
 	}
 	
 	#chandelier1_holder {
-		margin-left: 2vw;
+		margin-left: 5px;
 	}
 	
 	#chandelier2_holder {
-		margin-right: 2vw;
+		margin-right: 5px;
 	}
 	
 	#chandelier1_holder img, #chandelier2_holder img {
@@ -442,8 +449,8 @@ html, body {
 	}
 	
 	#ramadan_kareem img {
-		height: 65px;
-		width: 250px;
+		height: 60px;
+		width: 220px;
 	}
 	
 	#hour {
@@ -543,18 +550,18 @@ html, body {
 		margin-left: 0px;
 		margin-right: 0px;
 		padding: 5px;
-		background-size: 94vw 202vh;
+		background-size: 430px 1350px;
 	}
 	
 	.duas {
-		width: 90vw;
-		height: 198vh;
+		width: 420px;
+		height: 1300px;
 		margin-top: 80px;
 		padding-top: 40px;
 		padding-bottom: 30px;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: .9rem;
+		font-size: 1rem;
 	}
 	
 	#arabic_ayat_1 {
@@ -579,5 +586,9 @@ html, body {
 
 	#eng_dua_2 {
 		width: 95%;
+	}
+	
+	#footer {
+		width: 100%;
 	}
 }
