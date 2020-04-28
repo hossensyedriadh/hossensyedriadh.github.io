@@ -251,7 +251,7 @@ html, body {
 	flex-basis: auto;
 	text-align: left;
 	margin-left: 15px;
-	color: #6b0000;
+	color: black;
 }
 /*Schedule*/
 
@@ -423,7 +423,7 @@ html, body {
 	color: #801d37;
 }
 
-@media (max-width: 1350px) {
+@media only screen and (min-width: 375px) and (max-width: 667px) {
 	.bg {
 		background-image: url("background_cropped.jpg");
 		background-repeat: repeat-y;
@@ -530,7 +530,7 @@ html, body {
 		border: 2px solid #000000;
 		border-collapse: collapse;
 		text-align: center;
-		padding: 10px 1.5vw;
+		padding: 10px 3px;
 		font-weight: bolder;
 	}
 
@@ -538,8 +538,8 @@ html, body {
 		border: 2px solid #000000;
 		border-collapse: collapse;
 		text-align: center;
-		padding: 2px 1.5vw;
-		height: 5px;
+		padding: 0px 5px;
+		height: 3px;
 		font-weight: bold;
 	}
 
@@ -551,14 +551,14 @@ html, body {
 		margin-left: 0px;
 		margin-right: 0px;
 		padding: 5px;
-		background-size: 415px 1315px;
+		background-size: 360px 1080px;
 	}
 	
 	.duas {
-		width: 405px;
-		height: 1305px;
+		width: 360px;
+		height: 1080px;
 		margin-top: 70px;
-		padding-bottom: 30px;
+		padding-bottom: 130px;
 		margin-left: auto;
 		margin-right: auto;
 		font-size: 0.9rem;
