@@ -251,7 +251,7 @@ html, body {
 	flex-basis: auto;
 	text-align: left;
 	margin-left: 15px;
-	color: #665200;
+	color: #6b0000;
 }
 /*Schedule*/
 
@@ -388,7 +388,7 @@ html, body {
 	background-color: #787878;
 	color: #000000;
 	position: relative;
-	width: 100%;
+	width: auto;
 }
 
 #dev_label {
@@ -425,7 +425,11 @@ html, body {
 
 @media (max-width: 1350px) {
 	.main_section {
-		margin: auto;
+		display: contents;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		height: 100%;
 	}
 	
 	.top_class {
@@ -557,7 +561,7 @@ html, body {
 		padding-bottom: 30px;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 	
 	#arabic_ayat_1 {
@@ -582,5 +586,9 @@ html, body {
 
 	#eng_dua_2 {
 		width: 95%;
+	}
+	
+	#footer {
+		width: 100%;
 	}
 }
