@@ -178,7 +178,7 @@ html, body {
 	flex-flow: flex-wrap;
 	flex-direction: column;
 	justify-content: space-around;
-	margin-left: 20px;
+	margin-left: 80px;
 }
 
 #year {
@@ -233,7 +233,7 @@ html, body {
 	border: 1px solid #000000;
 	border-collapse: collapse;
 	text-align: center;
-	padding: 15px 35px;
+	padding: 15px 32px;
 	font-weight: bolder;
 }
 
@@ -251,7 +251,7 @@ html, body {
 	flex-basis: auto;
 	text-align: left;
 	margin-left: 15px;
-	color: black;
+	color: #6b0000;
 }
 /*Schedule*/
 
@@ -299,7 +299,7 @@ html, body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
-	width: 67%;
+	width: 70%;
 }
 
 #eng_ayat_1 {
@@ -309,7 +309,7 @@ html, body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
-	width: 67%;
+	width: 64%;
 }
 
 #source_ayat_1 {
@@ -337,7 +337,7 @@ html, body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
-	width: 67%;
+	width: 64%;
 }
 
 #eng_dua_1 {
@@ -347,7 +347,7 @@ html, body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 50px;
-	width: 67%;
+	width: 64%;
 }
 
 #dua_2_title {
@@ -366,7 +366,7 @@ html, body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
-	width: 67%;
+	width: 70%;
 }
 
 #eng_dua_2 {
@@ -375,7 +375,7 @@ html, body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 67%;
+	width: 64%;
 }
 /*Dua*/
 
@@ -423,7 +423,162 @@ html, body {
 	color: #801d37;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 667px) {
+/*responsive*/
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+	#chandelier1_holder {
+		margin-left: 5px;
+	}
+	
+	#chandelier2_holder {
+		margin-right: 5px;
+	}
+	
+	#chandelier1_holder img, #chandelier2_holder img {
+		height: 220px;
+	}
+	
+	#ramadan_kareem img {
+		height: 100px;
+		width: 300px;
+	}
+	
+	#hour {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	#first_colon {
+		order: 2;
+		flex-basis: auto;
+		margin: 10px 5px 0px 5px;
+	}
+	
+	#minute {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	#second_colon {
+		order: 4;
+		flex-basis: auto;
+		margin: 10px 5px 0px 5px;
+	}
+	
+	#second {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	.parent {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	.schedule {
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: space-between;
+		padding: 0px 5px;
+	}
+	
+	#year {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#title {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#timezone {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#districts {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#schedule_table {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#schedule_table tr th {
+		border: 1px solid #000000;
+		border-collapse: collapse;
+		text-align: center;
+		padding: 10px 18px;
+		font-weight: bold;
+	}
+
+	#schedule_table tr td {
+		border: 1px solid #000000;
+		border-collapse: collapse;
+		text-align: center;
+		padding: 4px 18px;
+		height: 8px;
+		font-weight: bold;
+	}
+
+	#notice {
+		margin-left: 15px;
+	}
+	
+	.dua {
+		margin-left: 0px;
+		margin-right: 10px;
+		padding: 5px;
+		background-size: 420px 1300px;
+	}
+	
+	.duas {
+		width: 420px;
+		height: 1300px;
+		margin-top: 70px;
+		padding-bottom: 110px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1.1rem;
+	}
+	
+	#arabic_ayat_1 {
+		width: 90%;
+	}
+
+	#eng_ayat_1 {
+		width: 90%;
+	}
+
+	#arabic_dua_1 {
+		width: 90%;
+	}
+
+	#eng_dua_1 {
+		width: 90%;
+	}
+
+	#arabic_dua_2 {
+		width: 90%;
+	}
+
+	#eng_dua_2 {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 865px) and (max-width: 1024px) {
 	.bg {
 		background-image: url("background_cropped.jpg");
 		background-repeat: repeat-y;
@@ -432,8 +587,328 @@ html, body {
 		position: relative;
 	}
 	
-	.top_class {
+	#chandelier1_holder {
+		margin-left: 5px;
+	}
+	
+	#chandelier2_holder {
+		margin-right: 5px;
+	}
+	
+	#chandelier1_holder img, #chandelier2_holder img {
+		height: 220px;
+	}
+	
+	#ramadan_kareem img {
+		height: 100px;
+		width: 300px;
+	}
+	
+	#hour {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	#first_colon {
+		order: 2;
+		flex-basis: auto;
+		margin: 10px 5px 0px 5px;
+	}
+	
+	#minute {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	#second_colon {
+		order: 4;
+		flex-basis: auto;
+		margin: 10px 5px 0px 5px;
+	}
+	
+	#second {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	.parent {
+		flex-direction: column;
+	}
+	
+	.schedule {
+		margin-left: auto;
+		margin-right: auto;
 		justify-content: space-around;
+		padding: 0px 5px;
+	}
+	
+	#year {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#title {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#timezone {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#districts {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#schedule_table {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 2px 5px;
+	}
+	
+	#schedule_table tr th {
+		border: 2px solid #000000;
+		border-collapse: collapse;
+		text-align: center;
+		padding: 10px 36px;
+		font-weight: bolder;
+	}
+
+	#schedule_table tr td {
+		border: 2px solid #000000;
+		border-collapse: collapse;
+		text-align: center;
+		padding: 4px 36px;
+		height: 8px;
+		font-weight: bold;
+	}
+
+	#notice {
+		margin-left: 15px;
+	}
+	
+	.dua {
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 5px;
+		background-size: 430px 1260px;
+	}
+	
+	.duas {
+		width: 430px;
+		height: 1260px;
+		margin-top: 70px;
+		padding-bottom: 110px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1.1rem;
+	}
+	
+	#arabic_ayat_1 {
+		width: 95%;
+	}
+
+	#eng_ayat_1 {
+		width: 95%;
+	}
+
+	#arabic_dua_1 {
+		width: 95%;
+	}
+
+	#eng_dua_1 {
+		width: 95%;
+	}
+
+	#arabic_dua_2 {
+		width: 95%;
+	}
+
+	#eng_dua_2 {
+		width: 95%;
+	}
+}
+
+@media only screen and (min-width: 668px) and (max-width: 864px) {
+	.bg {
+		background-image: url("background_cropped.jpg");
+		background-repeat: repeat-y;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+	}
+	
+	#chandelier1_holder {
+		margin-left: 5px;
+	}
+	
+	#chandelier2_holder {
+		margin-right: 5px;
+	}
+	
+	#chandelier1_holder img, #chandelier2_holder img {
+		height: 200px;
+	}
+	
+	#ramadan_kareem img {
+		height: 80px;
+		width: 240px;
+	}
+	
+	#hour {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	#first_colon {
+		order: 2;
+		flex-basis: auto;
+		margin: 10px 5px 0px 5px;
+	}
+	
+	#minute {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	#second_colon {
+		order: 4;
+		flex-basis: auto;
+		margin: 10px 5px 0px 5px;
+	}
+	
+	#second {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	.parent {
+		flex-direction: column;
+	}
+	
+	.schedule {
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: space-around;
+		padding: 0px 5px;
+	}
+	
+	#year {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#title {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#timezone {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#districts {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#schedule_table {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 2px 5px;
+	}
+	
+	#schedule_table tr th {
+		border: 2px solid #000000;
+		border-collapse: collapse;
+		text-align: center;
+		padding: 10px 24px;
+		font-weight: bolder;
+	}
+
+	#schedule_table tr td {
+		border: 2px solid #000000;
+		border-collapse: collapse;
+		text-align: center;
+		padding: 4px 24px;
+		height: 8px;
+		font-weight: bold;
+	}
+
+	#notice {
+		margin-left: 15px;
+	}
+	
+	.dua {
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 5px;
+		background-size: 410px 1200px;
+	}
+	
+	.duas {
+		width: 410px;
+		height: 1200px;
+		margin-top: 70px;
+		padding-bottom: 130px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1rem;
+	}
+	
+	#arabic_ayat_1 {
+		width: 95%;
+	}
+
+	#eng_ayat_1 {
+		width: 95%;
+	}
+
+	#arabic_dua_1 {
+		width: 95%;
+	}
+
+	#eng_dua_1 {
+		width: 95%;
+	}
+
+	#arabic_dua_2 {
+		width: 95%;
+	}
+
+	#eng_dua_2 {
+		width: 95%;
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+	.bg {
+		background-image: url("background_cropped.jpg");
+		background-repeat: repeat-y;
+		background-position: center;
+		background-size: cover;
+		position: relative;
 	}
 	
 	#chandelier1_holder {
@@ -562,6 +1037,168 @@ html, body {
 		margin-left: auto;
 		margin-right: auto;
 		font-size: 0.9rem;
+	}
+	
+	#arabic_ayat_1 {
+		width: 95%;
+	}
+
+	#eng_ayat_1 {
+		width: 95%;
+	}
+
+	#arabic_dua_1 {
+		width: 95%;
+	}
+
+	#eng_dua_1 {
+		width: 95%;
+	}
+
+	#arabic_dua_2 {
+		width: 95%;
+	}
+
+	#eng_dua_2 {
+		width: 95%;
+	}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 374px) {
+	.bg {
+		background-image: url("background_cropped.jpg");
+		background-repeat: repeat-y;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+	}
+	
+	#chandelier1_holder {
+		margin-left: 5px;
+	}
+	
+	#chandelier2_holder {
+		margin-right: 5px;
+	}
+	
+	#chandelier1_holder img, #chandelier2_holder img {
+		height: 140px;
+	}
+	
+	#ramadan_kareem img {
+		height: 40px;
+		width: 150px;
+	}
+	
+	#hour {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	#first_colon {
+		order: 2;
+		flex-basis: auto;
+		margin: 10px 5px 0px 5px;
+	}
+	
+	#minute {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	#second_colon {
+		order: 4;
+		flex-basis: auto;
+		margin: 10px 5px 0px 5px;
+	}
+	
+	#second {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	.parent {
+		flex-direction: column;
+	}
+	
+	.schedule {
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: space-around;
+		padding: 0px 5px;
+	}
+	
+	#year {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#title {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#timezone {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#districts {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#schedule_table {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 2px 3px;
+	}
+	
+	#schedule_table tr th {
+		border: 1px solid #000000;
+		border-collapse: collapse;
+		text-align: center;
+		padding: 8px 1px;
+		font-weight: bolder;
+	}
+
+	#schedule_table tr td {
+		border: 1px solid #000000;
+		border-collapse: collapse;
+		text-align: center;
+		padding: 0px 1px;
+		height: 3px;
+		font-weight: bold;
+	}
+
+	#notice {
+		margin-left: 15px;
+	}
+	
+	.dua {
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 5px;
+		background-size: 340px 1060px;
+	}
+	
+	.duas {
+		width: 340px;
+		height: 1060px;
+		margin-top: 70px;
+		padding-bottom: 115px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 0.8rem;
 	}
 	
 	#arabic_ayat_1 {
