@@ -1225,3 +1225,165 @@ html, body {
 		width: 95%;
 	}
 }
+
+@media only screen and (min-width: 140px) and (max-width: 239px) {
+	.bg {
+		background-image: url("background_cropped.jpg");
+		background-repeat: repeat-y;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+	}
+	
+	#chandelier1_holder {
+		margin-left: 5px;
+	}
+	
+	#chandelier2_holder {
+		margin-right: 5px;
+	}
+	
+	#chandelier1_holder img, #chandelier2_holder img {
+		height: 80px;
+	}
+	
+	#ramadan_kareem img {
+		height: 30px;
+		width: 90px;
+	}
+	
+	#hour {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	#first_colon {
+		order: 2;
+		flex-basis: auto;
+		margin: 10px 5px 0px 5px;
+	}
+	
+	#minute {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	#second_colon {
+		order: 4;
+		flex-basis: auto;
+		margin: 10px 5px 0px 5px;
+	}
+	
+	#second {
+		padding: 10px 0px 8px 0px;
+		height: 52px;
+		width: 60px;
+		font-size: 1.3rem;
+		font-weight: 500;
+	}
+	
+	.parent {
+		flex-direction: column;
+	}
+	
+	.schedule {
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: space-around;
+		padding: 0px 5px;
+	}
+	
+	#year {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#title {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#timezone {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#districts {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#schedule_table {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 2px 3px;
+	}
+	
+	#schedule_table tr th {
+		border: 1px solid #000000;
+		border-collapse: collapse;
+		text-align: center;
+		padding: 8px 0px;
+		font-weight: bolder;
+	}
+
+	#schedule_table tr td {
+		border: 1px solid #000000;
+		border-collapse: collapse;
+		text-align: center;
+		padding: 0px 0px;
+		height: 3px;
+		font-weight: bold;
+	}
+
+	#notice {
+		margin-left: 10px;
+	}
+	
+	.dua {
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 5px;
+		background-size: 280px 1000px;
+	}
+	
+	.duas {
+		width: 280px;
+		height: 1000px;
+		margin-top: 70px;
+		padding-bottom: 115px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 0.7rem;
+	}
+	
+	#arabic_ayat_1 {
+		width: 95%;
+	}
+
+	#eng_ayat_1 {
+		width: 95%;
+	}
+
+	#arabic_dua_1 {
+		width: 95%;
+	}
+
+	#eng_dua_1 {
+		width: 95%;
+	}
+
+	#arabic_dua_2 {
+		width: 95%;
+	}
+
+	#eng_dua_2 {
+		width: 95%;
+	}
+}
