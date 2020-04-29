@@ -4,14 +4,6 @@ const suhoorTimes = ['Apr 25, 2020 04:05:00', 'Apr 26, 2020 04:04:00', 'Apr 27, 
 
 let t = document.getElementById("timer_div");
 
-let iftaarHours;
-let iftaarMinutes;
-let iftaarSeconds;
-
-let suhoorHours;
-let suhoorMinutes;
-let suhoorSeconds;
-
 let iftaarCounter = setInterval(function() {
 	for (let i=0; i<iftarTimes.length;) {
 		let now = new Date().getTime();
@@ -19,9 +11,9 @@ let iftaarCounter = setInterval(function() {
 		let days = Math.floor(distance / (1000 * 60 * 60 * 24));
 		
 		if (days >= 0) {
-			iftaarHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			iftaarMinutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			iftaarSeconds = Math.floor((distance % (1000 * 60)) / 1000);
+			let iftaarHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			let iftaarMinutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			let iftaarSeconds = Math.floor((distance % (1000 * 60)) / 1000);
 			
 			if (iftaarHours <= 5) {
 				t.style.display = "block";
@@ -54,9 +46,9 @@ let suhoorCounter = setInterval(function() {
 		let days = Math.floor(distance / (1000 * 60 * 60 * 24));
 		
 		if (days >= 0) {
-			suhoorHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			suhoorMinutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			suhoorSeconds = Math.floor((distance % (1000 * 60)) / 1000);
+			let suhoorHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			let suhoorMinutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			let suhoorSeconds = Math.floor((distance % (1000 * 60)) / 1000);
 			
 			if (suhoorHours <= 3) {
 				t.style.display = "block";
