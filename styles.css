@@ -1296,7 +1296,7 @@ html, body {
 		margin-left: auto;
 		margin-right: auto;
 		justify-content: space-around;
-		padding: 0px 5px;
+		padding: 0px 2px;
 	}
 	
 	#year {
@@ -1322,7 +1322,7 @@ html, body {
 	#schedule_table {
 		margin-left: auto;
 		margin-right: auto;
-		padding: 2px 3px;
+		padding: 2px 1px;
 	}
 	
 	#schedule_table tr th {
@@ -1330,7 +1330,7 @@ html, body {
 		border-collapse: collapse;
 		text-align: center;
 		padding: 8px 0px;
-		font-weight: bolder;
+		font-weight: bold;
 	}
 
 	#schedule_table tr td {
@@ -1339,7 +1339,7 @@ html, body {
 		text-align: center;
 		padding: 0px 0px;
 		height: 3px;
-		font-weight: bold;
+		font-weight: 100;
 	}
 
 	#notice {
@@ -1350,17 +1350,17 @@ html, body {
 		margin-left: 0px;
 		margin-right: 0px;
 		padding: 5px;
-		background-size: 280px 1000px;
+		background-size: 240px 940px;
 	}
 	
 	.duas {
-		width: 280px;
-		height: 1000px;
+		width: 240px;
+		height: 940px;
 		margin-top: 70px;
 		padding-bottom: 115px;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: 0.7rem;
+		font-size: 0.6rem;
 	}
 	
 	#arabic_ayat_1 {
