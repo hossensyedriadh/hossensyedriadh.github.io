@@ -171,9 +171,24 @@ html, body {
 	transform: scale(1.5) rotate(360deg);
 }
 
-@media only screen and (min-width: 280px) and (max-width: 864px) {
+@media only screen and (min-width: 280px) and (max-width: 864px) and (orientation: portrait) {
 	.content_div {
 		flex-direction: column;
+	}
+	
+	#card1, #card2 {
+		height: 45%;
+		width: 60%;
+	}
+	
+	#card1:hover, #card2:hover {
+		transform: scale(1.2);
+	}
+}
+
+@media only screen and (min-width: 360px) and (max-width: 640px) and (orientation: landscape) {
+	.content_div {
+		flex-direction: row;
 	}
 	
 	#card1, #card2 {
