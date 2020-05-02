@@ -15,6 +15,7 @@ html, body {
 	color: #000;
 	background-color: #009688;
 	animation: colorchange 25s infinite;
+	animation-fill-mode: both;
 	-webkit-animation: colorchange 25s infinite;
 }
 
@@ -97,12 +98,6 @@ html, body {
 	transform: translateX(-30px) scale(1.2);
 }
 
-#card1_visit {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 #card2 {
 	order: 2;
 	display: block;
@@ -119,12 +114,6 @@ html, body {
 
 #card2:hover {
 	transform: translateX(30px) scale(1.2);
-}
-
-#card2_visit {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .modal-footer {
