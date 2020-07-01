@@ -81,6 +81,7 @@ section .modal-body i {
 	
 	50% {
 		color: #43a047;
+		transform: rotate(360deg);
 	}
 	
 	75% {
