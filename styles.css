@@ -44,11 +44,32 @@ section .modal-body {
 
 section .modal-body i {
 	color: #0097a7;
-	animation: cog_color;
+	animation: cog_color, spin;
 	animation-direction: normal;
-	animation-duration: 6s;
+	animation-duration: 5s;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 @keyframes cog_color {
@@ -62,7 +83,6 @@ section .modal-body i {
 	
 	50% {
 		color: #43a047;
-		transform: rotate(360deg);
 	}
 	
 	75% {
@@ -81,7 +101,6 @@ section .modal-body i {
 	
 	50% {
 		color: #43a047;
-		transform: rotate(360deg);
 	}
 	
 	75% {
