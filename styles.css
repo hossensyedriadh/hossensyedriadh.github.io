@@ -141,6 +141,25 @@ body {
 }
 
 #card3:hover {
+	margin: 0 50px;
+	transform: scale(1.2);
+}
+
+#card4 {
+	order: 4;
+	display: block;
+	width: 200px;
+	height: 240px;
+	margin: 15px;
+	color: #000;
+	text-align: center;
+	background-color: #3d3d3d;
+	text-decoration: none;
+	box-shadow: 5px 10px 18px #333333;
+	transition: all .4s;
+}
+
+#card4:hover {
 	margin-left: 50px;
 	transform: translateX(25px) scale(1.2);
 }
