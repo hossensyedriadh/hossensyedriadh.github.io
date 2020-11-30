@@ -188,12 +188,12 @@ body {
 		flex-direction: column;
 	}
 	
-	#card1, #card2 {
+	#card1, #card2, #card3 {
 		height: 45%;
 		width: 60%;
 	}
 	
-	#card1:hover, #card2:hover {
+	#card1:hover, #card2:hover, #card3:hover {
 		transform: scale(1.2);
 	}
 	
@@ -207,12 +207,12 @@ body {
 		flex-direction: row;
 	}
 	
-	#card1, #card2 {
+	#card1, #card2, #card3 {
 		height: 45%;
 		width: 60%;
 	}
 	
-	#card1:hover, #card2:hover {
+	#card1:hover, #card2:hover, #card3:hover {
 		transform: scale(1.2);
 	}
 	
