@@ -141,8 +141,8 @@ body {
 }
 
 #card3:hover {
-	margin: 0 50px;
-	transform: scale(1.2);
+	margin-left: 50px;
+	transform: translateX(25px) scale(1.2);
 }
 
 .modal-footer {
